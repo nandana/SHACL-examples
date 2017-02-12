@@ -73,21 +73,10 @@ public class TopBraidShaclExample {
         dataset.addNamedModel(shapesGraphURI.toString(), shapesModel);
 
         Model results = new ModelConstraintValidator().validateModel(dataset, shapesGraphURI, null, true, null, null).getModel();
-        addPrefixes(results);
 
         //Print the validiation result
         System.out.println(ModelPrinter.get().print(results));
 
     }
 
-    /***
-     * This method adds prefixes to a given model to make the serializations more readable
-     * @param model the Jena model to add the prefixes
-     */
-    private static void addPrefixes(Model model) {
-        if (model == null) {
-          return;
-        }
-        model.setNsPrefix("sh", "http://www.w3.org/ns/topbraid#");
-    }
 }

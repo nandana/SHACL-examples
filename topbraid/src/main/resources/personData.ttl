@@ -1,5 +1,13 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+<http://delicias.dia.fi.upm.es/~vrodriguez/> a foaf:Person;
+    foaf:age 20 .
 
 <http://id.nandana.org/card#me> a foaf:Person;
     foaf:age 20, 30 .
+
+
+
+
 
