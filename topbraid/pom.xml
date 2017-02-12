@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Copyright 2014-2017 Ontology Engineering Group, Universidad Politécnica de Madrid, Spain
+Copyright 2014-2016 Ontology Engineering Group, Universidad Politécnica de Madrid, Spain
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -19,49 +19,29 @@ limitations under the License.
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.nandana.sandbox.shacl</groupId>
+        <artifactId>shacl-examples</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../</relativePath>
+    </parent>
+
     <groupId>org.nandana.sandbox.shacl</groupId>
-    <artifactId>shacl-examples</artifactId>
+    <artifactId>shacl-topbraid</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SHACL Examples :: Parent</name>
-    <packaging>pom</packaging>
+    <name>SHACL Examples :: TopBraid API</name>
 
-    <licenses>
-        <license>
-            <name>The Apache Software License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <distribution>repo</distribution>
-            <comments>A business-friendly OSS license</comments>
-        </license>
-    </licenses>
-
-    <developers>
-        <developer>
-            <id>nandana</id>
-            <name>Nandana Mihindukulasooriya</name>
-            <email>nmihindu@fi.upm.es</email>
-            <organization>Ontology Engineering Group, Universidad Politécnica de Madrid</organization>
-        </developer>
-    </developers>
-
-
-    <organization>
-        <name>Ontology Engineering Group</name>
-        <url>www.oeg-upm.net</url>
-    </organization>
+    <dependencies>
+        <dependency>
+            <groupId>org.topbraid</groupId>
+            <artifactId>shacl</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
-
-    <modules>
-        <module>rdfunit</module>
-        <module>topbraid</module>
-    </modules>
-
-    <issueManagement>
-        <system>Git</system>
-        <url>https://github.com/nandana/SHACL-examples</url>
-    </issueManagement>
 
 
     <build>
